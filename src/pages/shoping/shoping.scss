@@ -1,0 +1,23 @@
+page-shoping {
+    @mixin linear-gradient($direction, $color-stops...) {
+        background: nth(nth($color-stops, 1), 1);
+        background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+        background: linear-gradient($direction, $color-stops);
+      }
+    .gradient{
+        background: #7F7FD5;
+        background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+        background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+    }
+    .shop{
+        position: relative;
+        ion-badge{
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 16px;
+        }
+    }
+    
+}
+

@@ -1,0 +1,304 @@
+<!--
+  Generated template for the ShopingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color='newcolor'>
+      <ion-input placeholder="Search..."></ion-input>
+    <ion-buttons end>
+        <button class="notification-button" ion-button icon-only>
+          <ion-icon name="chatbubbles" >
+            <ion-badge class="notifications-badge" color="danger">2</ion-badge>
+          </ion-icon>
+        </button>
+        <button class="notification-button" ion-button icon-only>
+          <ion-icon name="cart">
+              <ion-badge class="notifications-badge" color="danger">5</ion-badge>
+          </ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="gradient">
+  <ion-segment [(ngModel)]="stock" >
+    <ion-segment-button value="all" style="color:rgb(255, 255, 255)"><b>ALL</b></ion-segment-button>
+    <ion-segment-button value="po" style="color:rgb(255, 255, 255)"><b>PRE-ORDER</b></ion-segment-button>
+    <ion-segment-button value="r" style="color:rgb(255, 255, 255)"><b>READY STOCK</b></ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="stock">
+
+        <ion-card *ngSwitchCase="'all'">
+          <ion-card-title>
+            <div class="shop">
+              <img src="../../assets/af/fzo/itachi.jpg" style="width:100%;height:300px;">
+              <ion-badge color="secondary">Ready Stock</ion-badge>
+            </div>
+          </ion-card-title>
+          <ion-card-content>
+            <div align="center">
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                      <h4>NARUTO SHIPPUDEN</h4>
+                      <p><b>Itachi Uchiha</b></p>
+                      <i>By Figuart Zero</i>
+                  </ion-col>
+                  <ion-col>
+                      <p style="color:green">IDR 1.000.000</p>
+                      <button ion-button color="primary">Get Offer</button>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+              
+              
+            </div>
+          </ion-card-content>
+        </ion-card>
+        
+        
+
+        <ion-card *ngSwitchCase="'all'">
+          
+          <ion-card-title>
+            <div class="shop">
+              <img src="../../assets/af/fzo/ichigokurosaki.jpg" style="width:100%;height:300px;">
+              <ion-badge color="secondary">Ready Stock</ion-badge>
+            </div>
+          </ion-card-title>
+          <ion-card-content>
+            <div align="center">
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                          <h4>BLEACH</h4>
+                          <p><b>Ichigo Kurosaki</b></p>
+                          <i>By Figuart Zero</i>
+                      </ion-col>
+                      <ion-col>
+                          <p style="color:green">IDR 800.000</p>
+                          <button ion-button color="primary">Get Offer</button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+            </div>
+          </ion-card-content>
+        </ion-card>
+        
+        <ion-card *ngSwitchCase="'all'">
+          <ion-card-title>
+            <div class="shop">
+              <img src="../../assets/af/ht/ca2.jpg" style="width:100%;height:300px;">
+              <ion-badge color="danger">Pre-Order</ion-badge>
+            </div>
+          </ion-card-title>
+          <ion-card-content>
+            <div align="center">
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                          <h4>AVENGERS</h4>
+                          <p><b>Captain America</b></p>
+                          <i>By Hot Toys</i>
+                      </ion-col>
+                      <ion-col>
+                          <p style="color:green"><b>IDR 13.000.000</b></p>
+                          <p style="color:green;font-size: 12px;">Down Payment : IDR 4.000.000</p>
+                          <button ion-button color="primary">Get Offer</button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+            </div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card *ngSwitchCase="'all'">
+            <ion-card-title>
+              <div class="shop">
+                <img src="../../assets/af/pop/luffy-strong-world.jpg" style="width:100%;height:300px;">
+                <ion-badge color="secondary">Ready Stock</ion-badge>
+              </div>
+            </ion-card-title>
+            <ion-card-content>
+              <div align="center">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                        <h4>ONE PIECE</h4>
+                        <p><b>Monkey D. Luffy </b></p>
+                        <i>By P.O.P</i>
+                    </ion-col>
+                    <ion-col>
+                        <p style="color:green">IDR 500.000</p>
+                        <button ion-button color="primary">Get Offer</button>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </div>
+            </ion-card-content>
+          </ion-card>
+          <ion-card *ngSwitchCase="'all'" >
+              <ion-card-title>
+                <div class="shop">
+                  <img src="../../assets/af/tsume art/saitama.jpg" style="width:100%;height:300px;">
+                  <ion-badge color="danger">Pre-Order</ion-badge>
+                </div>
+              </ion-card-title>
+              <ion-card-content>
+                <div align="center">
+                    <ion-grid>
+                        <ion-row>
+                          <ion-col>
+                              <h4>ONE PUNCH MAN</h4>
+                              <p><b>Saitama</b></p>
+                              <i>By Tsume</i>
+                          </ion-col>
+                          <ion-col>
+                              <p style="color:green"><b>IDR 13.000.000</b></p>
+                              <p style="color:green;font-size: 12px;">Down Payment : IDR 4.000.000</p>
+                              <button ion-button color="primary">Get Offer</button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-grid>
+                </div>
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card *ngSwitchCase="'po'"  >
+                <ion-card-title>
+                  <div class="shop">
+                    <img src="../../assets/af/tsume art/saitama.jpg" style="width:100%;height:300px;">
+                    <ion-badge color="danger">Pre-Order</ion-badge>
+                  </div>
+                </ion-card-title>
+                <ion-card-content>
+                  <div align="center">
+                      <ion-grid>
+                          <ion-row>
+                            <ion-col>
+                                <h4>ONE PUNCH MAN</h4>
+                                <p><b>Saitama</b></p>
+                                <i>By Tsume</i>
+                            </ion-col>
+                            <ion-col>
+                                <p style="color:green"><b>IDR 13.000.000</b></p>
+                                <p style="color:green;font-size: 12px;">Down Payment : IDR 4.000.000</p>
+                                <button ion-button color="primary">Get Offer</button>
+                            </ion-col>
+                          </ion-row>
+                        </ion-grid>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+
+              <ion-card *ngSwitchCase="'po'">
+                  <ion-card-title>
+                    <div class="shop">
+                      <img src="../../assets/af/ht/ca2.jpg" style="width:100%;height:300px;">
+                      <ion-badge color="danger">Pre-Order</ion-badge>
+                    </div>
+                  </ion-card-title>
+                  <ion-card-content>
+                    <div align="center">
+                        <ion-grid>
+                            <ion-row>
+                              <ion-col>
+                                  <h4>AVENGERS</h4>
+                                  <p><b>Captain America</b></p>
+                                  <i>By Hot Toys</i>
+                              </ion-col>
+                              <ion-col>
+                                  <p style="color:green"><b>IDR 13.000.000</b></p>
+                                  <p style="color:green;font-size: 12px;">Down Payment : IDR 4.000.000</p>
+                                  <button ion-button color="primary">Get Offer</button>
+                              </ion-col>
+                            </ion-row>
+                          </ion-grid>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+                <ion-card *ngSwitchCase="'r'">
+                    <ion-card-title>
+                      <div class="shop">
+                        <img src="../../assets/af/fzo/itachi.jpg" style="width:100%;height:300px;">
+                        <ion-badge color="secondary">Ready Stock</ion-badge>
+                      </div>
+                    </ion-card-title>
+                    <ion-card-content>
+                      <div align="center">
+                        <ion-grid>
+                          <ion-row>
+                            <ion-col>
+                                <h4>NARUTO SHIPPUDEN</h4>
+                                <p><b>Itachi Uchiha</b></p>
+                                <i>By Figuart Zero</i>
+                            </ion-col>
+                            <ion-col>
+                                <p style="color:green">IDR 1.000.000</p>
+                                <button ion-button color="primary">Get Offer</button>
+                            </ion-col>
+                          </ion-row>
+                        </ion-grid>
+                        
+                        
+                      </div>
+                    </ion-card-content>
+                  </ion-card>
+                  <ion-card *ngSwitchCase="'r'">
+          
+                      <ion-card-title>
+                        <div class="shop">
+                          <img src="../../assets/af/fzo/ichigokurosaki.jpg" style="width:100%;height:300px;">
+                          <ion-badge color="secondary">Ready Stock</ion-badge>
+                        </div>
+                      </ion-card-title>
+                      <ion-card-content>
+                        <div align="center">
+                            <ion-grid>
+                                <ion-row>
+                                  <ion-col>
+                                      <h4>BLEACH</h4>
+                                      <p><b>Ichigo Kurosaki</b></p>
+                                      <i>By Figuart Zero</i>
+                                  </ion-col>
+                                  <ion-col>
+                                      <p style="color:green">IDR 800.000</p>
+                                      <button ion-button color="primary">Get Offer</button>
+                                  </ion-col>
+                                </ion-row>
+                              </ion-grid>
+                        </div>
+                      </ion-card-content>
+                    </ion-card>
+                    <ion-card *ngSwitchCase="'r'">
+                        <ion-card-title>
+                          <div class="shop">
+                            <img src="../../assets/af/pop/luffy-strong-world.jpg" style="width:100%;height:300px;">
+                            <ion-badge color="secondary">Ready Stock</ion-badge>
+                          </div>
+                        </ion-card-title>
+                        <ion-card-content>
+                          <div align="center">
+                            <ion-grid>
+                              <ion-row>
+                                <ion-col>
+                                    <h4>ONE PIECE</h4>
+                                    <p><b>Monkey D. Luffy </b></p>
+                                    <i>By P.O.P</i>
+                                </ion-col>
+                                <ion-col>
+                                    <p style="color:green">IDR 500.000</p>
+                                    <button ion-button color="primary">Get Offer</button>
+                                </ion-col>
+                              </ion-row>
+                            </ion-grid>
+                          </div>
+                        </ion-card-content>
+                      </ion-card>
+  </div>
+</ion-content>

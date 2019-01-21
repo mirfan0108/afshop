@@ -1,0 +1,23 @@
+.content-category{
+    padding: 0;
+    margin: 0;
+    background-color: indigo;
+    width: 100%;
+    height: 100%;
+    .category-studio{
+        width:100%;
+        height: 168px;
+        background-repeat: no-repeat; 
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        h3{
+            position: absolute;
+            top:25%;
+            left:20%;
+            padding: 0;
+            margin: 0;
+            font-size: 52px;
+        }
+    }
+}

@@ -1,0 +1,146 @@
+page-hello-ionic {
+
+}
+@font-face {
+	font-family: "mottingham";
+	src: url("../assets/fonts/mottingham.ttf") ;
+}
+ion-input {
+	background-color: #F3F3F3;
+	border: 1px solid #cecece;
+    padding-left: 10px;
+    width: 95%;
+    border-radius: 20px;
+}
+    @mixin linear-gradient($direction, $color-stops...) {
+        background: nth(nth($color-stops, 1), 1);
+        background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+        background: linear-gradient($direction, $color-stops);
+    }
+
+.top-header{
+    background-image: linear-gradient(hotpink, tomato);
+}
+.notification-button {            
+    position: relative;
+    width: 42px;
+    top:1px;
+    right: 1px;
+    overflow: visible!important;
+    
+}
+
+.gradient{
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+}
+
+.banner{
+    width: 100%;
+    height: 250px;
+    background-image: url('../../assets/imgs/bg-subheader.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    button{
+        position: absolute;
+        left: 35%;
+        top:75%;
+        border-radius: 10px;
+    }
+    img{
+        position: absolute;
+        width: 15%;
+        left: 42%;
+        top:15%;
+    }
+    h1{
+        font-family: mottingham;
+        position: absolute;
+        left: 20%;
+        top:45%;
+        color:white;
+    }
+    @media only screen and (min-width: 900px) and (max-height:600px){
+        height: 900px;
+        h1{
+            font-size: 52px;
+            left: 35%;
+            top:50%;
+        }
+    }
+    @media only screen and(min-width:700px)and(max-height:1100px){//iPad
+        height: 800px;
+        h1{
+            font-size: 62px;
+            left: 20%;
+            top:40%;
+        }
+        button{
+            width: 30%;
+            top:65%;
+        }
+    }
+    @media only screen and(min-width:1000px)and(max-height:1400px){//iPad pro
+        height: 900px;
+        h1{
+            font-size: 52px;
+            left: 30%;
+            top:45%;
+        }
+        button{
+            width: 30%;
+            top:65%;
+        }
+    }
+    
+}
+
+.img-banner{
+    width: 100%;
+    height: 140px;
+    @media only screen and (min-width: 600px) {
+        height: auto;
+    }
+    @media only screen and (max-height: 300px) {
+        height: 300px;
+    }
+}
+
+
+
+.notifications-badge {
+    background-color: red;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    border-radius: 100%;
+}
+
+ion-navbar{
+    img{
+        position: relative;
+    }
+}
+
+ion-card{
+    position: relative;
+    img{
+        position: relative;
+    }
+    .top-deal{
+        position: absolute;
+        color:white;
+        top: 25px;
+        right: 16px;
+        font-size: 16px;
+    }
+    .price-disc{
+        position: absolute;
+        color:red;
+        top: 8px;
+        right: 16px;
+        text-decoration: line-through;
+    }
+}

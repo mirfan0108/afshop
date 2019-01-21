@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar color='newcolor'>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-input placeholder="Search..."></ion-input>
+      <ion-buttons end>
+        <button class="notification-button" ion-button icon-only>
+          <ion-icon name="chatbubbles" >
+            <ion-badge class="notifications-badge" color="danger">2</ion-badge>
+          </ion-icon>
+        </button>
+        <button class="notification-button" ion-button icon-only>
+          <ion-icon name="cart">
+              <ion-badge class="notifications-badge" color="danger">5</ion-badge>
+          </ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar> 
+</ion-header>
+
+
+<ion-content>
+  <div class="banner" align="center">
+    <img src="../../assets/imgs/logo.png" >
+    <h1><b>Action Figure Shop</b></h1>
+    <button ion-button color="primary" [navPush]="pushPage">Shop Now</button>
+  </div>
+
+  <div align="center">
+    <h3>BEST <b style="color:red;">DEAL</b></h3>
+  </div>
+
+  <ion-card>
+    <img src="../../assets/af/tsume art/gaara.jpg"/>
+    <p class="price-disc">IDR 20.000.000</p>
+    <h3 class="top-deal"><b>IDR 18.000.000</b></h3>
+    <ion-card-content>
+      <ion-card-title>
+        <div align="center">
+          <h4>NARUTO SHIPPUDEN</h4>
+          <p><b>Gaara " A father's hope, a mother's love"</b></p>
+          <p><i>By Tsume</i></p>
+        </div>
+      </ion-card-title>
+      <div align="center">
+        <button ion-button color="primary">Get Offer</button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  
+  <div align="center">
+    <h3>MOST <b style="color:red;">POPULAR</b></h3>
+  </div>
+
+  <ion-card>
+    <img src="../../assets/af/ht/joker.jpg"/>
+    <ion-card-content>
+      <ion-card-title>
+        <div align="center">
+          <h4>THE DARK KNIGHT</h4>
+          <p><b>The Joker</b></p>
+          <p><i>By Hot Toys</i></p>
+        </div>
+      </ion-card-title>
+      <div align="center">
+        <p style="color:green">IDR 15.000.000</p>
+        <button ion-button color="primary">Get Offer</button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
